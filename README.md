@@ -37,10 +37,8 @@ _This component tree is at at first estimate as is subject to change._
 
 ## Description
 
-_A program will allow user to use your typical ride share functionality but for more long distnaced travel._
+_This program will be a ride share app that is aimed towards long distance travel. The app will act more as a carpool system for means of travel long distance and less of a taxi system._
 
-| Behavior | Input | Output |
-| ------------- |:-------------:| -----:|
 | the program should make users to make an account on the web site |
 | The program should force users to sign in berfore the are able the browse the site and its content |
 | The program should allow user look though a list of areas that other users are traveling to |
