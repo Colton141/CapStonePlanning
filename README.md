@@ -54,7 +54,7 @@ _After the user makes an account and logs in to the app they can load it up. Kno
 * Chat between riders and the person adding the ride to the app 
 * Payment through the app 
 * Ability for the app to get the distince between the two destination
-* 
+*
 
 
 ## Setup/Installation Requirement
