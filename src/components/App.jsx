@@ -1,22 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import KegList from './KegList';
-import NewKegForm from './NewKegForm';
 import Error404 from './Error404';
-import Employee from './Employee';
 import Header from './Header';
 import PropTypes from 'prop-types';
 
 
-class App extends React.Component  {
+function App  {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      masterKegList: []
-    };
-    this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
-  }
+
 
   handleAddingNewKegToList(newKeg) {
   let newMasterKegList = this.state.masterKegList.slice();
