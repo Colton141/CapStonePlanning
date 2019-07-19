@@ -17,7 +17,7 @@ _A program will allow user to use your typical ride share functionality but for 
 | The program should show users how much of the trip they have to pay for in order top ride along |
 
 
-## Setup/Installation Requirements
+## Setup/Installation Requirement
 
 * _Clone project from github_
 * _view code in text editor if necessary_
@@ -37,7 +37,7 @@ _No support offered_
 
 _JS_
 _React_
-_ Possibly C#_
+_Possibly C#_
 
 ### License
 
