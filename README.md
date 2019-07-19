@@ -15,7 +15,7 @@ _A program will allow user to use your typical ride share functionality but for 
 | The program should allow user to click on the distenation and be able to add themselves to the trip |
 | The program should allow user to add there trip and destination to the list of destinations for other to see and become a part of |
 | The program should show users how much of the trip they have to pay for in order top ride along |
-| 
+
 
 ## Setup/Installation Requirements
 
