@@ -38,6 +38,7 @@ _This component tree is at at first estimate as is subject to change._
 ## Description
 
 _This program will be a ride share app that is aimed towards long distance travel. The app will act more as a carpool system for means of travel long distance and less of a taxi system._
+_After the user makes an account and logs in to the app they can load it up. Knowing they are going to soon take a drive to "blank" for business or to visit and the user has some extra space in their car. Trying to make some extra money that user can post their trip on the app. The user can post a start time and date and start location. The app will then post the ride on the ride board will all the necessary information along will a price to ride along. Other users that would also like to travel to place can 
 
 | the program should make users to make an account on the web site |
 | The program should force users to sign in berfore the are able the browse the site and its content |
