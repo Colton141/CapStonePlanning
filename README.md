@@ -38,7 +38,24 @@ _This component tree is at at first estimate as is subject to change._
 ## Description
 
 _This program will be a ride share app that is aimed towards long distance travel. The app will act more as a carpool system for means of travel long distance and less of a taxi system._
-_After the user makes an account and logs in to the app they can load it up. Knowing they are going to soon take a drive to "blank" for business or to visit and the user has some extra space in their car. Trying to make some extra money that user can post their trip on the app. The user can post a start time and date and start location. The app will then post the ride on the ride board will all the necessary information along will a price to ride along. Other users that would also like to travel to the same place can then join that users ride untill all the avalible seats are gone. The app will then remove the trip from the list of rides when there is no room for more people to join._
+_After the user makes an account and logs in to the app they can load it up. Knowing they are going to soon take a drive to "blank" for business or to visit and the user has some extra space in their car. Trying to make some extra money that user can post their trip on the app. The user can post a start time and date and start location. The app will then post the ride on the ride board will all the necessary information along will a price to ride along. Other users that would also like to travel to the same place can then join that users ride untill all the available seats are gone. The app will then remove the trip from the list of rides when there is no room for more people to join._
+
+## MVP goals
+
+* splash screen with title and login
+* Home screen with navigation between adding a ride and veiwing list of rides that are already there
+* List off all available rides on the app
+* Ability to add a ride to the app
+* Ability to join any current ride 
+
+
+## Stretch Goals
+
+* Chat between riders and the person adding the ride to the app 
+* Payment through the app 
+* Ability for the app to get the distince between the two destination
+* 
+
 
 ## Setup/Installation Requirement
 
