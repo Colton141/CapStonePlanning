@@ -3,18 +3,13 @@ import { Link } from 'react-router-dom';
 
 
 
-function MainPage() {
+function FrontPage() {
 
   return (
     <div >
-      <h1>QuizUp</h1>
-      <h4>Connecting people through shared interests</h4>
-      <ul>
-        <li>Topics for every interest</li>
-        <li>Play against friends in real time</li>
-        <li>Discover like-minded people</li>
-        <li>And it's FREE!</li>
-      </ul>
+      <h1>Hitched</h1>
+      <h4>Hop on Board</h4>
+   
       <Link to="/signup"><button>Sign Up</button></Link>
       <Link to="/login"><button>Log In</button></Link>
     </div>
@@ -22,4 +17,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default FrontPage;
