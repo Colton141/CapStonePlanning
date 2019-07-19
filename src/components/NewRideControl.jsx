@@ -1,8 +1,8 @@
 import React from 'react';
-import NewKegForm from './NewKegForm';
+import NewRideForm from './NewRideForm';
 import PropTypes from 'prop-types';
 
-class NewKegControl extends React.Component {
+class NewRideControl extends React.Component {
 
   constructor(props) {
     super(props);
@@ -13,7 +13,7 @@ class NewKegControl extends React.Component {
 
 
   render() {
-    let currentlyVisibleContent = <NewKegForm onNewKegCreation={this.props.onNewKegCreation} />;
+    let currentlyVisibleContent = <NewRideForm onNewRideCreation={this.props.onNewRideCreation} />;
     return (
       <div>
         {currentlyVisibleContent}
@@ -22,9 +22,9 @@ class NewKegControl extends React.Component {
   }
 }
 
-NewKegControl.propTypes = {
-  onNewKegCreation: PropTypes.func
+NewRideControl.propTypes = {
+  onNewRideCreation: PropTypes.func
 };
 
 
-export default NewKegControl;
+export default NewRideControl;
