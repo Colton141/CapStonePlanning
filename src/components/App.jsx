@@ -5,30 +5,21 @@ import Header from './Header';
 import PropTypes from 'prop-types';
 
 
-function App  {
+function App() {
 
 
-
-  handleAddingNewKegToList(newKeg) {
-  let newMasterKegList = this.state.masterKegList.slice();
-  newMasterKegList.push(newKeg);
-  this.setState({masterKegList: newMasterKegList});
-}
-
-  render() {
     return (
       <div>
         <Header/>
         <Switch>
-        <Route exact path='/' render={()=><KegList kegList={this.state.masterKegList} />} />
-        <Route path='/newkeg' render={() =><NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />} />
-        <Route path='/employee' render={() =><Employee keglist={this.state.masterKegList} />} />
+        <Route exact path='/' component={MainPage} />
+        <Route path='/login' component={Login} />
+        <Route path='/signup' component={SignUp} />
         <Route component={Error404} />
         </Switch>
 
         </div>
       );
-    }
   }
 
 
