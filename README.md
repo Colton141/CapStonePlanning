@@ -1,17 +1,21 @@
 
-# _TapRoom_
+# _Hichted_
 
 #### By _**Colton Lacey**_
 
 ## Description
 
-_A program will allow user to search a Tap room of current keg pick from._
+_A program will allow user to use your typical ride share functionality but for more long distnaced travel._
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| The program should allow user look though Tap room of a list kegs |
-| The program should allow user to click on items and view there information |
-| The user should be able to sort items by price |
+| the program should make users to make an account on the web site |
+| The program should force users to sign in berfore the are able the browse the site and its content |
+| The program should allow user look though a list of areas that other users are traveling to |
+| The program should allow user to click on the distenation and be able to add themselves to the trip |
+| The program should allow user to add there trip and destination to the list of destinations for other to see and become a part of |
+| The program should show users how much of the trip they have to pay for in order top ride along |
+| 
 
 ## Setup/Installation Requirements
 
@@ -33,6 +37,7 @@ _No support offered_
 
 _JS_
 _React_
+_ Possibly C#_
 
 ### License
 
