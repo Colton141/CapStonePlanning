@@ -6,10 +6,10 @@ function Ride(props) {
     <div>
 
       <div>
-      <h2>{props.name}</h2>
-      <h4>{props.brand}</h4>
-      <h4>{props.price}</h4>
-      <h4>{props.alcoholContent}</h4>
+      <h2>{props.place}</h2>
+      <h4>{props.date}</h4>
+      <h4>{props.time}</h4>
+      <h4>{props.account}</h4>
 
 
       <br />

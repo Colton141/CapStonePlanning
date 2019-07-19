@@ -17,6 +17,7 @@ function App() {
         <Header/>
         <Switch>
         <Route exact path='/' component={FrontPage} />
+        <Route exact path='/home' component={Homepage} />
         <Route path='/login' component={Login} />
         <Route path='/signup' component={SignUp} />
         <Route component={Error404} />
