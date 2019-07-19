@@ -5,7 +5,6 @@
 
 ## Project Proposal
 
-_Name of Student: Colton Lacey_
 
 _Name of Project: Hitched_
 
@@ -28,6 +27,12 @@ Add a way for people that have linked up to be able to chat with one another._
 
 _What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?_
 _Firebase_
+
+
+## Component Tree
+_This component tree is at at first estimate as is subject to change._
+
+![componenent tree](./tree.jpeg?raw=true "Tree")
 
 
 ## Description
