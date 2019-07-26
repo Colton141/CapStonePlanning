@@ -18,20 +18,18 @@ namespace carPool.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
 
-            modelBuilder.Entity("carPool.Context.Answer", b =>
+            modelBuilder.Entity("carPool.Context", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("Choice");
-
+   
                     b.Property<int?>("RideId");
 
                     b.HasKey("Id");
 
                     b.HasIndex("RideId");
 
-                    b.ToTable("Answer");
                 });
 
             modelBuilder.Entity("carPool.Context.Ride", b =>
@@ -39,41 +37,24 @@ namespace carPool.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Name");
-
-                    b.Property<string>("Score");
-
-                    b.Property<string>("SessionId");
-
-                    b.HasKey("Id");
+    
 
                     b.ToTable("Ride");
                 });
 
-            modelBuilder.Entity("carPool.Context.Question", b =>
+            modelBuilder.Entity("carPool.Context.Account", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("CorrectAnswer");
-
-                    b.Property<string>("Option1");
-
-                    b.Property<string>("Option2");
-
-                    b.Property<string>("Option3");
-
-                    b.Property<string>("Prompt");
-
                     b.HasKey("Id");
 
-                    b.ToTable("Question");
+                    b.ToTable("Account");
                 });
 
             modelBuilder.Entity("carPool.Context.Answer", b =>
                 {
                     b.HasOne("carPool.Context.Ride")
-                        .WithMany("Answer")
                         .HasForeignKey("RideId");
                 });
 #pragma warning restore 612, 618
