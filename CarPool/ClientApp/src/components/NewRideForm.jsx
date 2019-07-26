@@ -2,6 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
+const getRides = async () => {
+  const response = await fetch('/api/Rides/GetAll');
+  const rides = await response.json();
+  return rides;
+}
+
+
+
 function NewRideForm(props){
   let _place = null;
   let _date = null;
