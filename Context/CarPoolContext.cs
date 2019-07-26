@@ -7,8 +7,8 @@ namespace carPool.Context
 
     public class carPoolContext : DbContext
     {
-        public DbSet<Player> Player { get; set; }        
-        public DbSet<Question> Question { get; set; }
+        public DbSet<Ride> Ride { get; set; }        
+        public DbSet<Profile> Profile { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
