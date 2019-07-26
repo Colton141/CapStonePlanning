@@ -1,6 +1,6 @@
-const webpack = require('webpack');
+const webpack = require('./node_modules/webpack');
 const { resolve } = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('./node_modules/html-webpack-plugin');
 
 module.exports = {
 
