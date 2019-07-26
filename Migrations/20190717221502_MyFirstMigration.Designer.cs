@@ -25,16 +25,16 @@ namespace carPool.Migrations
 
                     b.Property<int>("Choice");
 
-                    b.Property<int?>("PlayerId");
+                    b.Property<int?>("RideId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PlayerId");
+                    b.HasIndex("RideId");
 
                     b.ToTable("Answer");
                 });
 
-            modelBuilder.Entity("carPool.Context.Player", b =>
+            modelBuilder.Entity("carPool.Context.Ride", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -47,7 +47,7 @@ namespace carPool.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Player");
+                    b.ToTable("Ride");
                 });
 
             modelBuilder.Entity("carPool.Context.Question", b =>
@@ -72,9 +72,9 @@ namespace carPool.Migrations
 
             modelBuilder.Entity("carPool.Context.Answer", b =>
                 {
-                    b.HasOne("carPool.Context.Player")
+                    b.HasOne("carPool.Context.Ride")
                         .WithMany("Answer")
-                        .HasForeignKey("PlayerId");
+                        .HasForeignKey("RideId");
                 });
 #pragma warning restore 612, 618
         }
