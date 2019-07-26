@@ -17,29 +17,25 @@ namespace carPool.Context
 
     }
 
-    public class Player
+    public class Ride
     {
         public int Id { get; set; }
-        public string SessionId { get; set; }
-        public string Name { get; set; }
-        public string Score { get; set; }
-        public List<Answer> Answer { get; set; } = new List<Answer>();
+        public string Start { get; set; }
+        public string End { get; set; }
+        public int Date { get; set; }
+        public int Time {get; set; }
+        public string User {get; set; }
     }
 
-    public class Answer
+    public class Profile
     {
         public int Id { get; set; }
-        public int Choice { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public int Join { get; set; }
     }
 
-    public class Question
-    {
-        public int Id { get; set; }
-        public string Prompt { get; set; }
-        public string Option1 { get; set; }
-        public string Option2 { get; set; }
-        public string Option3 { get; set; }
-        public int CorrectAnswer { get; set; }
-    }
+
 
 }
