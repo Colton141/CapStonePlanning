@@ -12,9 +12,6 @@ namespace carPool.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
-                    SessionId = table.Column<string>(nullable: true),
-                    Name = table.Column<string>(nullable: true),
-                    Score = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -27,11 +24,6 @@ namespace carPool.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
-                    Prompt = table.Column<string>(nullable: true),
-                    Option1 = table.Column<string>(nullable: true),
-                    Option2 = table.Column<string>(nullable: true),
-                    Option3 = table.Column<string>(nullable: true),
-                    CorrectAnswer = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -44,7 +36,6 @@ namespace carPool.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
-                    Choice = table.Column<int>(nullable: false),
                     RideId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -66,8 +57,6 @@ namespace carPool.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Answer");
 
             migrationBuilder.DropTable(
                 name: "Account");
