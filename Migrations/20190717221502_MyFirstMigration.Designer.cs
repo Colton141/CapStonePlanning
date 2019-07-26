@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using mathletics.Context;
+using carPool.Context;
 
-namespace mathletics.Migrations
+namespace carPool.Migrations
 {
     [DbContext(typeof(CarPoolContext))]
     [Migration("20190717221502_MyFirstMigration")]
@@ -18,7 +18,7 @@ namespace mathletics.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
 
-            modelBuilder.Entity("mathletics.Context.Answer", b =>
+            modelBuilder.Entity("carPool.Context.Answer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -34,7 +34,7 @@ namespace mathletics.Migrations
                     b.ToTable("Answer");
                 });
 
-            modelBuilder.Entity("mathletics.Context.Player", b =>
+            modelBuilder.Entity("carPool.Context.Player", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -50,7 +50,7 @@ namespace mathletics.Migrations
                     b.ToTable("Player");
                 });
 
-            modelBuilder.Entity("mathletics.Context.Question", b =>
+            modelBuilder.Entity("carPool.Context.Question", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -70,9 +70,9 @@ namespace mathletics.Migrations
                     b.ToTable("Question");
                 });
 
-            modelBuilder.Entity("mathletics.Context.Answer", b =>
+            modelBuilder.Entity("carPool.Context.Answer", b =>
                 {
-                    b.HasOne("mathletics.Context.Player")
+                    b.HasOne("carPool.Context.Player")
                         .WithMany("Answer")
                         .HasForeignKey("PlayerId");
                 });

@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace mathletics.Migrations
+namespace carPool.Migrations
 {
     public partial class MyFirstMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Player",
+                name: "Ride",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -18,11 +18,11 @@ namespace mathletics.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Player", x => x.Id);
+                    table.PrimaryKey("PK_Ride", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Question",
+                name: "Account",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -35,7 +35,7 @@ namespace mathletics.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Question", x => x.Id);
+                    table.PrimaryKey("PK_Account", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -45,23 +45,23 @@ namespace mathletics.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
                     Choice = table.Column<int>(nullable: false),
-                    PlayerId = table.Column<int>(nullable: true)
+                    RideId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Answer", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Answer_Player_PlayerId",
-                        column: x => x.PlayerId,
-                        principalTable: "Player",
+                        name: "FK_Answer_Ride_RideId",
+                        column: x => x.RideId,
+                        principalTable: "Ride",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Answer_PlayerId",
+                name: "IX_Answer_RideId",
                 table: "Answer",
-                column: "PlayerId");
+                column: "RideId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -70,10 +70,10 @@ namespace mathletics.Migrations
                 name: "Answer");
 
             migrationBuilder.DropTable(
-                name: "Question");
+                name: "Account");
 
             migrationBuilder.DropTable(
-                name: "Player");
+                name: "Ride");
         }
     }
 }
