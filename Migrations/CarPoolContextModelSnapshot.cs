@@ -3,12 +3,12 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using mathletics.Context;
+using carPool.Context;
 
-namespace mathletics.Migrations
+namespace carPool.Migrations
 {
-    [DbContext(typeof(MathleticsContext))]
-    partial class MathleticsContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(CarPoolContext))]
+    partial class CarPoolContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -16,23 +16,7 @@ namespace mathletics.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
 
-            modelBuilder.Entity("mathletics.Context.Answer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("Choice");
-
-                    b.Property<int?>("PlayerId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PlayerId");
-
-                    b.ToTable("Answer");
-                });
-
-            modelBuilder.Entity("mathletics.Context.Player", b =>
+            modelBuilder.Entity("carPool.Context.Ride", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -45,34 +29,24 @@ namespace mathletics.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Player");
+                    b.ToTable("Ride");
                 });
 
-            modelBuilder.Entity("mathletics.Context.Question", b =>
+            modelBuilder.Entity("carPool.Context.Account", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("CorrectAnswer");
-
-                    b.Property<string>("Option1");
-
-                    b.Property<string>("Option2");
-
-                    b.Property<string>("Option3");
-
-                    b.Property<string>("Prompt");
-
                     b.HasKey("Id");
 
-                    b.ToTable("Question");
+                    b.ToTable("Account");
                 });
 
-            modelBuilder.Entity("mathletics.Context.Answer", b =>
+            modelBuilder.Entity("carPool.Context.Answer", b =>
                 {
-                    b.HasOne("mathletics.Context.Player")
+                    b.HasOne("carPool.Context.Ride")
                         .WithMany("Answer")
-                        .HasForeignKey("PlayerId");
+                        .HasForeignKey("RideId");
                 });
 #pragma warning restore 612, 618
         }
