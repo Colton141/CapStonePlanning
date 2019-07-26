@@ -15,7 +15,7 @@ const render = (Component) => {
     document.getElementById('react-app-root')
   );
 };
-
+serviceWorker.unregister();
 render(App);
 
 /*eslint-disable*/
