@@ -8,7 +8,14 @@ const getRides = async () => {
   return rides;
 }
 
+export default function RideForm() {
+  const [Ride, setRide] = useState([]);
 
+  useEffect(() => {
+    getRides().then(list => {      
+      setRide(list)
+    })
+  }, [])
 
 function NewRideForm(props){
   let _place = null;
@@ -59,3 +66,4 @@ NewRideForm.propTypes = {
 };
 
 export default NewRideForm;
+
