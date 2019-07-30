@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\mathletics\mathletics.csproj" />
+    <ProjectReference Include="..\CarPool\CarPool.csproj" />
   </ItemGroup>
 
 </Project>
